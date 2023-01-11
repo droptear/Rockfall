@@ -1,0 +1,124 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/admin/Desktop/Portfolio/Rockfall
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60467
+Successfully changed project path to: /Users/admin/Desktop/Portfolio/Rockfall
+/Users/admin/Desktop/Portfolio/Rockfall
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 57.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/admin/Desktop/Portfolio/Rockfall/Assets
+GfxDevice: creating device client; threaded=0
+Renderer: ATI Radeon HD 4670 OpenGL Engine
+Vendor:   ATI Technologies Inc.
+Version:  3.3 ATI-10.4.14
+GLES:     0
+ GL_ARB_blend_func_extended GL_ARB_draw_buffers_blend GL_ARB_ES2_compatibility GL_ARB_explicit_attrib_location GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_occlusion_query2 GL_ARB_sampler_objects GL_ARB_separate_shader_objects GL_ARB_shader_bit_encoding GL_ARB_shading_language_include GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_swizzle GL_ARB_timer_query GL_ARB_vertex_type_2_10_10_10_rev GL_EXT_debug_label GL_EXT_debug_marker GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp GL_EXT_texture_sRGB_decode GL_APPLE_client_storage GL_APPLE_container_object_shareable GL_APPLE_flush_render GL_APPLE_object_purgeable GL_APPLE_rgb_422 GL_APPLE_row_bytes GL_APPLE_texture_range GL_ATI_texture_mirror_once GL_NV_texture_barrier
+OPENGL LOG: Creating OpenGL 3.3 graphics device ; Context level  <OpenGL 3.3> ; Context handle -1886643200
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56087
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.2f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.002115 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 45.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  8.906 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000750 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.382 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.2f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.15 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1115 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.9 MB.
+System memory in use after: 109.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1556.
+Total: 4.446738 ms (FindLiveObjects: 0.293276 ms CreateObjectMapping: 0.061059 ms MarkObjects: 3.740220 ms  DeleteObjects: 0.350424 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Models/Asteroid.blend
+  artifactKey: Guid(3b4850a356ba147b4b428eaf203ba64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Asteroid.blend using Guid(3b4850a356ba147b4b428eaf203ba64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f9e706c24febb613c3ff4ada003684') in 1.961488 seconds
+  Import took 1.965633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Models/Skybox-Source.blend
+  artifactKey: Guid(0307c72c7f8574ef591eea4b06f8b12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Skybox-Source.blend using Guid(0307c72c7f8574ef591eea4b06f8b12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d170e24dbddecdc6e94e33368965b93') in 0.089557 seconds
+  Import took 0.120287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001630 seconds.
+  path: Assets/Models/Station.blend
+  artifactKey: Guid(61094f710502f4b468597f73e0705bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Station.blend using Guid(61094f710502f4b468597f73e0705bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4c03427a154bf016a91627b01be900') in 0.202873 seconds
+  Import took 0.206624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Models
+  artifactKey: Guid(7db9e3e56f10242b596fa72890784b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(7db9e3e56f10242b596fa72890784b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301fcd2a308ea131c2cf94bdfacf5aa1') in 0.040657 seconds
+  Import took 0.070481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Models/Ship.blend
+  artifactKey: Guid(d6c248492c9ac473689e545f4c78832e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ship.blend using Guid(d6c248492c9ac473689e545f4c78832e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ebddb7c454b7903b222ebb20db78540') in 0.058691 seconds
+  Import took 0.062166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041468 seconds.
+  path: Assets/Models/Station.blend
+  artifactKey: Guid(61094f710502f4b468597f73e0705bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Station.blend using Guid(61094f710502f4b468597f73e0705bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4c03427a154bf016a91627b01be900') in 0.252335 seconds
+  Import took 0.273347 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
