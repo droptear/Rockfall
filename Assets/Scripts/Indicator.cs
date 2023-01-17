@@ -5,16 +5,17 @@ using UnityEngine.UI;
 
 public class Indicator : MonoBehaviour
 {
-    [SerializeField] private Transform _target;
-    [SerializeField] private Transform _showDistanceTo;
-    [SerializeField] private Text _distanceLabel;
-    [SerializeField] private int _margin = 50;
-
-    [SerializeField] private Color _color
+    public Transform target;
+    public Color color
     {
         set { GetComponent<Image>().color = value; }
         get { return GetComponent<Image>().color; }
     }
+
+    [SerializeField] private Transform _showDistanceTo;
+    [SerializeField] private Text _distanceLabel;
+    [SerializeField] private int _margin = 50;
+
 
     void Start()
     {
@@ -24,7 +25,7 @@ public class Indicator : MonoBehaviour
 
     void Update()
     {
-        if (_target == null)
+        if (target == null)
         {
             Destroy(gameObject);
             return;
@@ -34,7 +35,7 @@ public class Indicator : MonoBehaviour
         {
             _distanceLabel.enabled = true;
 
-            var distance = (int)Vector3.Magnitude(_showDistanceTo.position - _target.position);
+            var distance = (int)Vector3.Magnitude(_showDistanceTo.position - target.position);
             _distanceLabel.text = distance.ToString() + "m";
         } else
         {
@@ -42,7 +43,7 @@ public class Indicator : MonoBehaviour
         }
 
         GetComponent<Image>().enabled = true;
-        var viewportPoint = Camera.main.WorldToViewportPoint(_target.position);
+        var viewportPoint = Camera.main.WorldToViewportPoint(target.position);
 
         if (viewportPoint.z < 0)
         {
