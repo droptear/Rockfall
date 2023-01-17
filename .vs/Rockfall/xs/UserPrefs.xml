@@ -1,14 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/VirtualJoystick.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InputManager.cs">
     <Files>
       <File FileName="Assets/Scripts/SmoothFollow.cs" />
       <File FileName="Assets/Scripts/VirtualJoystick.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/Singleton.cs" Line="5" Column="17" />
+      <File FileName="Assets/Scripts/InputManager.cs" Line="7" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
 </Properties>
