@@ -299,6 +299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 132999573}
+  - component: {fileID: 132999574}
   m_Layer: 0
   m_Name: Space Station
   m_TagString: Untagged
@@ -321,6 +322,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &132999574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132999572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a13a4a25af14a4d6ebbf78b70b656bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &391600522
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,6 +345,7 @@ GameObject:
   - component: {fileID: 391600523}
   - component: {fileID: 391600524}
   - component: {fileID: 391600525}
+  - component: {fileID: 391600526}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -351,6 +365,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1554465544}
+  - {fileID: 961616811}
+  - {fileID: 992146056}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -381,6 +397,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _turnRate: 6
   _levelDamping: 1
+--- !u!114 &391600526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391600522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c749223fa577e434d8ad5ea5da31c6fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shotPrefab: {fileID: 3058644448203610923, guid: 50578c56a741a4eb182ae69b58638c73, type: 3}
+  _firePoints:
+  - {fileID: 961616811}
+  - {fileID: 992146056}
 --- !u!1 &526684153
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 526684154}
+  - component: {fileID: 526684155}
   m_Layer: 0
   m_Name: Indicator Manager
   m_TagString: Untagged
@@ -410,6 +443,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &526684155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526684153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df85a7ed65f249e599c7817184196e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _labelContainer: {fileID: 1534834095}
+  _indicatorPrefab: {fileID: 7013633995296670997, guid: 570ab79ea4f704412a6b1f315b1051f0, type: 3}
+--- !u!1 &961616810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961616811}
+  m_Layer: 0
+  m_Name: Fire Point #1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &961616811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961616810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 391600523}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &992146055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992146056}
+  m_Layer: 0
+  m_Name: Fire Point #2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992146056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992146055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.9, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 391600523}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116144844
 GameObject:
