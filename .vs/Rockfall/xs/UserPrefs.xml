@@ -1,20 +1,22 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SpaceStation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ShipWeapons.cs">
     <Files>
       <File FileName="Assets/Scripts/SmoothFollow.cs" />
-      <File FileName="Assets/Scripts/VirtualJoystick.cs" Line="53" Column="12" />
+      <File FileName="Assets/Scripts/VirtualJoystick.cs" />
       <File FileName="Assets/Scripts/Singleton.cs" />
-      <File FileName="Assets/Scripts/InputManager.cs" Line="7" Column="37" />
-      <File FileName="Assets/Scripts/ShipSteering.cs" Line="13" Column="42" />
-      <File FileName="Assets/Scripts/Indicator.cs" Line="9" Column="20" />
-      <File FileName="Assets/Scripts/IndicatorManager.cs" Line="25" Column="29" />
-      <File FileName="Assets/Scripts/SpaceStation.cs" Line="12" Column="15" />
+      <File FileName="Assets/Scripts/InputManager.cs" />
+      <File FileName="Assets/Scripts/ShipSteering.cs" />
+      <File FileName="Assets/Scripts/Indicator.cs" />
+      <File FileName="Assets/Scripts/IndicatorManager.cs" />
+      <File FileName="Assets/Scripts/SpaceStation.cs" />
+      <File FileName="Assets/Scripts/Shot.cs" Line="17" Column="72" />
+      <File FileName="Assets/Scripts/ShipWeapons.cs" Line="1" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
