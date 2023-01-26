@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SmoothFollow : MonoBehaviour
 {
-    [SerializeField] private Transform _target;
+    public Transform target;
     [SerializeField] private float _height = 5.0f;
     [SerializeField] private float _distance = 10.0f;
 
@@ -15,11 +15,11 @@ public class SmoothFollow : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (!_target)
+        if (!target)
             return;
 
-        var wantedRotationAngle = _target.eulerAngles.y;
-        var wantedHeight = _target.position.y + _height;
+        var wantedRotationAngle = target.eulerAngles.y;
+        var wantedHeight = target.position.y + _height;
 
         var currentRotationAngle = transform.eulerAngles.y;
         var currentHeight = transform.position.y;
@@ -29,10 +29,10 @@ public class SmoothFollow : MonoBehaviour
 
         var currentRotation = Quaternion.Euler(0, currentRotationAngle, 0);
 
-        transform.position = _target.position;
+        transform.position = target.position;
         transform.position -= currentRotation * Vector3.forward * _distance;
 
         transform.position = new Vector3(transform.position.x, currentHeight, transform.position.z);
-        transform.rotation = Quaternion.Lerp(transform.rotation, _target.rotation, _rotationDamping * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, _rotationDamping * Time.deltaTime);
     }
 }

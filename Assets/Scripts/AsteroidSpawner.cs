@@ -10,9 +10,9 @@ public class AsteroidSpawner : MonoBehaviour
     [SerializeField] private float _spawnRate = 5.0f;
     [SerializeField] private float _variance = 1.0f;
 
-    [SerializeField] private Transform _target;
+    public Transform target;
 
-    [SerializeField] private bool _isSpawningAsteroids;
+    public bool isSpawningAsteroids;
 
     void Start()
     {
@@ -34,7 +34,7 @@ public class AsteroidSpawner : MonoBehaviour
 
     void CreateNewAsteroid()
     {
-        if (!_isSpawningAsteroids)
+        if (!isSpawningAsteroids)
             return;
 
         var asteroidPosition = Random.onUnitSphere * _radius;
@@ -44,7 +44,7 @@ public class AsteroidSpawner : MonoBehaviour
         var newAsteroid = Instantiate(_asteroidPrefab);
         newAsteroid.transform.position = asteroidPosition;
 
-        newAsteroid.transform.LookAt(_target);
+        newAsteroid.transform.LookAt(target);
     }
 
     private void OnDrawGizmosSelected()
