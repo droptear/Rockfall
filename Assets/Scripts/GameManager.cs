@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
     [SerializeField] private GameObject _shipPrefab;
     [SerializeField] private GameObject _spaceStationPrefab;
@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject _inGameUI;
     [SerializeField] private GameObject _pausedUI;
-    [SerializeField] private GameObject _gameOverUI;
+    [SerializeField] private GameObject _gameOverUI; 
     [SerializeField] private GameObject _mainMenuUI;
 
     public GameObject currentShip { get; private set; }
