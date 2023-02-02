@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class Indicator : MonoBehaviour
 {
     public Transform target;
+    public Transform showDistanceTo;
+
     public Color color
     {
         set { GetComponent<Image>().color = value; }
         get { return GetComponent<Image>().color; }
     }
 
-    [SerializeField] private Transform _showDistanceTo;
     [SerializeField] private Text _distanceLabel;
     [SerializeField] private int _margin = 50;
 
@@ -31,11 +32,11 @@ public class Indicator : MonoBehaviour
             return;
         }
 
-        if (_showDistanceTo != null)
+        if (showDistanceTo != null)
         {
             _distanceLabel.enabled = true;
 
-            var distance = (int)Vector3.Magnitude(_showDistanceTo.position - target.position);
+            var distance = (int)Vector3.Magnitude(showDistanceTo.position - target.position);
             _distanceLabel.text = distance.ToString() + "m";
         } else
         {

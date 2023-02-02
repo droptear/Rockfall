@@ -11,5 +11,7 @@ public class Asteroid : MonoBehaviour
         GetComponent<Rigidbody>().velocity = transform.forward * _speed;
 
         var indicator = IndicatorManager.instance.AddIndicator(gameObject, Color.red);
+
+        indicator.showDistanceTo = GameManager.instance.currentSpaceStation.transform;
     }
 }
